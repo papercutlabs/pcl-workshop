@@ -79,6 +79,10 @@ A fix that isn't written down is a fix you'll lose next session. So write it dow
 
 That's the four homes: `CLAUDE.md` or a skill, global or project.
 
+**Write it as the right way, not as a ban.** Most mistakes happen because nobody said how it should be done. So write down what to do — "Show returns as their own line, separate from sales" — rather than only what not to do — "Never net off returns." A ban leaves the next session guessing what to do instead.
+
+**Start loose.** Write the first version plainly and generally. If the same mistake happens again, tighten the wording then, and add the example that tripped it. Don't write a long, strict rule for something that has gone wrong once.
+
 Propose the home as part of the fix, with a one-line why, and let them confirm or redirect — never "where should this go?":
 
 > "This is about how you like answers in general, so I'll put it in your global `CLAUDE.md` — every project picks it up. Good?"

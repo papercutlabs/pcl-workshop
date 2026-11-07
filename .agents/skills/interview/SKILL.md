@@ -15,14 +15,14 @@ The output is `problem-brief.md`, which `/solutioning` uses next.
 
 Before doing anything else, set expectations in plain English:
 
-> "I'll align on the general shape of what you're trying to do first — one or two sentences, you confirm or correct. Then I'll ask short statements to narrow down what we need to solve, and you react with one of four: **strongly disagree**, **disagree**, **agree**, or **strongly agree**. Once the picture is clear, I write a one-page brief and we move into design. One question at a time, no blank-page questions."
+> "I'll align on the general shape of what you're trying to do first — one or two sentences, you confirm or correct. Then I'll send you a numbered set of short statements covering what we need to solve, all at once. React to each one with one of four: **strongly disagree**, **disagree**, **agree**, or **strongly agree**. A line like "1 agree, 2 strongly disagree, 3 disagree" is enough. Your reactions decide the next set. Once the picture is clear, I write a one-page brief and we move into design. No blank-page questions."
 
-This sets the texture of the conversation: react-not-articulate, beat-by-beat, statements-not-questions. Then start the procedure below.
+This sets the texture of the conversation: react-not-articulate, a whole set at a time, statements-not-questions. Then start the procedure below.
 
 ## Rules
 
 - **Make the phase visible.** Start by saying plainly: "I'm using the workshop interview flow now."
-- **One beat at a time.** One statement or one question, then wait.
+- **The whole set at once.** Send every statement the current altitude needs in one numbered message, then wait for reactions to all of them. A statement the participant skips is still open, not agreed.
 - **Start with a proposed understanding.** If the participant gives a rough ask, paraphrase it and ask what would materially change the work.
 - **Use statements before open questions.** "This is mainly about X, not Y" gets better signal than "what do you want?"
 - **Ask for real examples early.** If they mention emails, spreadsheets, screenshots, chats, documents, folders, or other real work, ask for one specific example and inspect it before continuing abstract discussion.
@@ -63,13 +63,13 @@ Default to outcome. Pull down into shape and specifics only after the outcome is
 
 Use one of two modes:
 
-- **Mode B (default)**: one statement at a time. Ask the participant to react with one of four reactions, **always stated in full words** when prompting: **strongly disagree** · **disagree** · **agree** · **strongly agree**. Do NOT use abbreviations (SD/D/A/SA) when prompting the participant — they don't know what those mean unless told. Internally (for your own tracking) you can shorthand, but every prompt to the participant uses the full words. Deeper signal per statement. Summarise the signal after each response before the next statement.
+- **Mode B (default)**: one numbered set of statements, all in one message: every statement the current altitude needs, usually 5 to 10. Ask the participant to react to each with one of four reactions, **always stated in full words** when prompting: **strongly disagree** · **disagree** · **agree** · **strongly agree**. Do NOT use abbreviations (SD/D/A/SA) when prompting the participant — they don't know what those mean unless told. Internally (for your own tracking) you can shorthand, but every prompt to the participant uses the full words. After the reactions, summarise the signal in a few lines, then send the next set only where the reactions raised something new or left something open.
 
 - **Mode A**: 4 mutually exclusive statements, participant picks the one that resonates most. Use only when narrowing between known alternatives, not when exploring.
 
 Each statement must be concrete and opinionated. Bland statements produce no signal.
 
-After each response, summarise the signal in one line and generate the next statement or question.
+After each set of reactions, summarise the signal and either send the next set (lower altitude, or following up what moved) or, when the picture is clear, write the brief.
 
 ### 4. Cover The Practical Checklist
 
@@ -145,7 +145,7 @@ Anti and trade-off statements often produce the sharpest signal. When you don't 
 ## Do Not
 
 - Don't ask open-ended "what do you want?" questions. That's the failure mode this skill exists to replace.
-- Don't propose 5+ statements at once. Mode B is one-at-a-time for a reason; each reaction should sharpen the next statement.
+- Don't drip statements one at a time. Send the whole set, so the participant sees the full picture and reacts once; the reactions sharpen the next set.
 - Don't pad with "great signal!" / "interesting!" between statements. Summarise the signal in one line, propose the next statement.
-- Don't converge prematurely. If reactions are still mixed at statement 4, keep going. Convergence is what you're listening for, not what you should fabricate.
+- Don't converge prematurely. If reactions are still mixed after a set, send another set. Convergence is what you're listening for, not what you should fabricate.
 - Don't use SD/D/A/SA abbreviations when prompting the participant. State the full scale (strongly disagree / disagree / agree / strongly agree) explicitly the first time a reaction is asked, and use full words on every subsequent prompt.

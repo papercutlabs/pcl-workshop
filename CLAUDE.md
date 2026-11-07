@@ -4,6 +4,8 @@ You are working with a non-technical workshop participant. They think in busines
 
 This file is the workshop's persistent memory. Keep it current. Anything the participant records, notes, corrects, or teaches during a session must be written back into `CLAUDE.md` if it will matter in a future session.
 
+Claude Code also keeps its own automatic memory: you may see "Saved 2 memories", and `/memory` shows what it kept. Leave it on. Anything that matters for this work still goes into `CLAUDE.md` as well, because that is the file the participant can read, check and correct.
+
 ## What We Build Here: A Workflow, Not An App
 
 The workshop output is a workflow that Claude can do for the participant when asked. Usually that becomes a skill, a reusable prompt, a template, a sheet, a document flow, or a small helper file.
@@ -44,7 +46,7 @@ Use one beat at a time:
 
 - Be concise.
 - No preambles.
-- One question at a time.
+- One question at a time, except during `/interview`, which sends its statements as one set.
 - Lead with the result.
 - Use plain business language.
 - Ask before any external side effect.

@@ -13,7 +13,7 @@ This is the design decision phase. There are many ways to solve any problem. You
 
 Before doing anything else, set expectations in plain English:
 
-> "I'll propose one direction for what to build — what it is, how we'll use it, and what format the output should be in. You react. We go back and forth until you agree. Then I propose 3–5 concrete checks, shaped like 'when I do X, I should see Y,' so we both know how to tell it worked. Once those are agreed, I write a plan and we move into build. I won't give you a menu of options — my job is to pick a practical direction, and yours is to correct it."
+> "I'll propose one direction for what to build — what it is, how we'll use it, and what format the output should be in. You react. We go back and forth until you agree. Then I propose 3–5 concrete checks, shaped like 'when I do X, I should see Y,' so we both know how to tell it worked. Once those are agreed, I write a plan and we move into build. I won't give you a menu of approaches — my job is to pick a practical direction, and yours is to correct it. Where you'd really be choosing between different-looking results, like the layout of the output, I'll show you two or three short versions and you point at one."
 
 Then start the procedure below.
 
@@ -50,6 +50,8 @@ Read the problem brief. Think through it. Pick one concrete direction — the on
 - **Tools or source material involved** — only what matters to the participant.
 - **Output format** — what file or app format they will use or share.
 - **Flags from the brief** — accuracy risk, no easy export, manual review, timing, access limits, or parallel work.
+
+**When there's a real choice about the result.** If the participant would choose between visibly different results — the layout of the output, what a summary contains, how a report reads — draft two or three short versions of that result (a few lines each, from their real example where you have one) and show them together. Ask once which is closest and what to change. Do this only for choices about what they will see, never for how it is built.
 
 End with:
 
@@ -129,7 +131,7 @@ Do not scaffold extra files. The briefs are the spec.
 
 ## Do Not
 
-- Do not present a menu of approaches. Pick one. Propose it. Let them react.
+- Do not present a menu of approaches. Pick one. Propose it. Let them react. Short versions of the visible result, when there's a real choice about it, are not a menu of approaches.
 - Do not ask the participant "what should we build?" — you propose a deliverable shape, they react.
 - Do not create participant-facing deliverables before clarifying format when format matters.
 - Do not build during solutioning. Solutioning outputs a plan, not the implementation.

@@ -88,7 +88,7 @@ curl -fsSL https://github.com/teren-papercutlabs/pcl-workshop/archive/refs/heads
 
 ### 3. Install the files
 
-Skills install globally so Claude can use `/interview`, `/solutioning`, and `/retro` from the workshop session. `CLAUDE.md` installs into the workshop folder and becomes the session memory.
+Skills install globally so Claude can use `/interview`, `/solutioning`, `/retro`, and `/give-feedback` from the workshop session. `CLAUDE.md` installs into the workshop folder and becomes the session memory.
 
 First install the skills:
 
@@ -126,7 +126,7 @@ ls -la CLAUDE.md ~/.claude/skills
 Expected:
 
 - `CLAUDE.md` exists in the workshop folder.
-- `~/.claude/skills/` contains `interview/`, `solutioning/`, and `retro/`.
+- `~/.claude/skills/` contains `interview/`, `solutioning/`, `retro/`, and `give-feedback/`.
 
 ### 6. Tell the participant what's next
 
