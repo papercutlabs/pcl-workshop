@@ -10,7 +10,7 @@ Papercut Labs workshop scaffolding for non-technical participants using the Clau
 4. Paste this prompt:
 
 ```text
-Read https://raw.githubusercontent.com/teren-papercutlabs/pcl-workshop/master/README.md and follow the "Claude desktop app setup" section to set up a workshop project for me.
+Read https://raw.githubusercontent.com/papercutlabs/pcl-workshop/master/README.md and follow the "Claude desktop app setup" section to set up a workshop project for me.
 ```
 
 Claude will set the workshop up in the folder you selected.
@@ -77,13 +77,13 @@ Then **stop** — don't continue installing into home.
 Run:
 
 ```bash
-git clone --depth 1 https://github.com/teren-papercutlabs/pcl-workshop.git /tmp/pcl-workshop-src
+git clone --depth 1 https://github.com/papercutlabs/pcl-workshop.git /tmp/pcl-workshop-src
 ```
 
 If that fails because git or the network is unavailable, try this fallback:
 
 ```bash
-curl -fsSL https://github.com/teren-papercutlabs/pcl-workshop/archive/refs/heads/master.tar.gz | tar -xzC /tmp && mv /tmp/pcl-workshop-master /tmp/pcl-workshop-src
+curl -fsSL https://github.com/papercutlabs/pcl-workshop/archive/refs/heads/master.tar.gz | tar -xzC /tmp && mv /tmp/pcl-workshop-master /tmp/pcl-workshop-src
 ```
 
 ### 3. Install the files
