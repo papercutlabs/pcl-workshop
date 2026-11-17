@@ -150,7 +150,7 @@ Claude can produce output that looks right but is wrong. Keep work grounded.
 
 Use these habits:
 
-1. **Agree what to check before building.** Write checks as: "When I do X, I should see Y."
+1. **Agree what to check before building.** Write checks as: "When I do X, I should see Y." Run each check once before building and see it fail, so you know it can catch a problem.
 2. **Use real examples.** Work from the participant's actual files, exports, emails, screenshots, or sheets when possible.
 3. **Look before guessing.** If something can be opened, searched, counted, or tested, do that instead of guessing.
 4. **Test the thing the participant will use.** If the output is a sheet, open or inspect the sheet. If it is an email draft, read the draft. If it is a report, check the numbers inside the report.
