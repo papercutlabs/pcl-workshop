@@ -1,13 +1,13 @@
 ---
 name: retro
-description: "End-of-cycle retrospective. The agent self-critiques, participant reacts, and future-useful learnings are encoded into CLAUDE.md immediately. Trigger for: /retro, retrospective, wrap up, what did we learn, end of cycle."
+description: "End-of-cycle retrospective. The agent self-critiques, participant reacts, and future-useful learnings are saved to memory, or turned into a skill, immediately. Trigger for: /retro, retrospective, wrap up, what did we learn, end of cycle."
 ---
 
 # Retrospective — The Codification Loop
 
 Run this at the end of each build cycle, or any time mid-session when something worth keeping surfaces and we need to capture it before it slips.
 
-Goal is not a retro document. Goal is codification: improve the next cycle by writing what should be remembered into `CLAUDE.md`.
+Goal is not a retro document. Goal is codification: improve the next cycle by saving what should be remembered to Claude's memory, and turning anything repeatable into a skill.
 
 You are codifying two kinds of things:
 
@@ -20,7 +20,7 @@ A fact with nothing "wrong" attached still gets codified. "The data refreshes ev
 
 Before doing anything else, tell the participant what you are about to do:
 
-> "I'm going to do the workshop retro now. First I'll reflect back what happened and capture your point of view — what worked, what felt wrong, and what facts about your work I should remember. Then we'll walk through the concrete changes to `CLAUDE.md` so future sessions pick them up. The output is the updated workshop memory, not a separate retro document."
+> "I'm going to do the workshop retro now. First I'll reflect back what happened and capture your point of view — what worked, what felt wrong, and what facts about your work I should remember. Then we'll walk through what I'm saving to memory and any skill I'm making, so future sessions pick them up. The output is what gets saved, not a separate retro document."
 
 Then start the procedure below.
 
@@ -34,15 +34,15 @@ This matches the react-not-articulate principle: do not ask the participant to i
 
 `/retro` does not only run at end-of-cycle. If the participant says something that sounds like a learning mid-session — "oh wait, X always means Y", "we tried Z and it didn't work because W", "actually, can you not do A in this project" — surface it on the spot:
 
-> "That sounds worth remembering for next time. I'll add it to `CLAUDE.md` unless you want it kept out."
+> "That sounds worth remembering for next time. I'll save it to memory unless you want it kept out."
 
 If they agree, run a compressed version for that one learning:
 
 1. State the learning back in one sentence.
-2. Choose the right section of `CLAUDE.md`.
+2. Decide where it goes. A fact, preference, correction or decision is saved to memory. A procedure they will run again becomes a skill.
 3. Generalise it so it helps future sessions.
-4. Edit `CLAUDE.md` in front of them.
-5. Read back what you wrote.
+4. Save it in front of them. For memory, say what you are saving, and they can check it with `/memory`. For a skill, make it with the skill-creator skill.
+5. Read back what you saved.
 
 Then continue whatever the participant was doing before. Do not run the full self-critique procedure for a single mid-session learning — that is saved for end-of-cycle.
 
@@ -86,15 +86,12 @@ Take what they add seriously. They see things you do not.
 
 ### 3. Find codification opportunities
 
-For each item, decide where it belongs inside `CLAUDE.md`:
+For each item, decide where it belongs:
 
-- **Participant Context** — role, team, tools, files, constraints, review rules.
-- **Business Facts To Remember** — facts about the domain, workflow, data, timing, or people.
-- **Decisions And Things Tried** — choices made, tradeoffs, failed approaches, and why.
-- **Preferences And Working Style** — output style, review style, wording, pacing, examples.
-- **Reusable Workflow Notes** — repeated steps, templates, folder names, skill names, or file locations.
+1. **Memory** — facts about the domain, workflow, data, timing, or people; preferences on output style, review style, wording, or pacing; corrections; and decisions, including tradeoffs and failed approaches and why.
+2. **A skill** — a repeatable procedure or report they will run again. Make it with the skill-creator skill, or update the existing skill.
 
-If the learning is a repeatable procedure that deserves its own command, write or update a skill and record the skill name in `CLAUDE.md`.
+Claude's automatic memory is on, so the participant can also just say "remember that ...". `/memory` shows what was kept.
 
 ### 4. Generalise
 
@@ -110,17 +107,17 @@ Every rule or fact must be useful beyond this exact moment:
 
 Make the changes now. Do not list what should change later.
 
-Edit `CLAUDE.md`. If a skill needs to change, edit the skill too. Then read back the change briefly:
+Save the facts, preferences and decisions to memory. Turn any repeatable procedure into a skill with skill-creator, or edit the existing skill. Then read back what you saved briefly:
 
-> "Updated `CLAUDE.md` with the order-status rule and the Tuesday report audience. Future sessions will see those before building."
+> "Saved to memory: the order-status rule and the Tuesday report audience. Future sessions will have those before building."
 
 ### 6. Close
 
 Briefly summarise:
 
 - What was built this cycle.
-- What was written into `CLAUDE.md`.
-- Any skill or reusable workflow note changed.
+- What was saved to memory.
+- Any skill made or changed.
 
 ## Output
 
@@ -131,6 +128,6 @@ The changed files are the real output. Do not create a standalone retro-notes fi
 - Do not skip the self-critique step. If you genuinely have no specific mistakes, say so plainly so the participant can correct you.
 - Do not skip the fact scan. Facts that are not tied to a mistake are the easiest to lose.
 - Do not write a retro document as the output.
-- Do not create a separate memory file. Business context and future-session memory live in `CLAUDE.md`.
+- Do not write business context into `CLAUDE.md`. It holds the workshop instructions only. Facts go to memory, procedures go to skills.
 - Do not retroactively praise the participant or yourself. Retro is for encoding, not morale.
 - Do not mention Git or commits unless the participant explicitly asks for version control.

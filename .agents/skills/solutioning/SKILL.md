@@ -31,7 +31,7 @@ Read `problem-brief.md` in the workshop folder. If it is missing, ask the partic
 - **React, not articulate.** You propose the deliverable shape, format, and checks. The participant reacts. Never ask "what should we build?" from a blank page.
 - **Let the deliverable surface here.** Recommend the shape that fits the brief: skill, helper file, template folder, spreadsheet, document, report, checklist, or another concrete output.
 - **Format is part of the deliverable.** Before creating files, ask or infer whether outputs need to be a doc, sheet, PDF, slide deck, email draft, CSV, Markdown file, or another format. If the format changes the work, ask one clear question before creating.
-- **Use the guidance in `CLAUDE.md`.** If trust is a concern, use the accuracy guidance. If there is no easy export or system access, use the browser-recording guidance. If the work splits into independent pieces, use the parallel-work guidance.
+- **Use the guidance in `CLAUDE.md` where it applies.** That covers no easy export or system access, quick tools to install, and the default app stack.
 - **No Git assumptions.** Workshop participants usually do not have Git repos. Do not mention commits, Git status, or skipped version-control steps unless the participant explicitly asks.
 
 ## Procedure
@@ -105,7 +105,7 @@ What file or app format the participant needs, and any format assumption still t
 - Files, sheets, emails, screenshots, platforms, or other inputs involved.
 
 ## Guidance Used
-- Accuracy, browser-recording/no-easy-export, parallel work, review gates, or other relevant guidance from `CLAUDE.md`.
+- Guidance from `CLAUDE.md` that applied (no easy export, tools to install, app stack), and any checks or review gates.
 
 ## Checks
 1. When I do X, I should see Y.

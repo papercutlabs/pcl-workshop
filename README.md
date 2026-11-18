@@ -20,11 +20,11 @@ The workshop loop is:
 1. **Interview** — clarify the problem by reacting to concrete statements and short questions. Output: `problem-brief.md`.
 2. **Solutioning** — propose a useful deliverable, output format, plan, and concrete checks. Output: `plan-brief.md`.
 3. **Build** — make the thing described in the plan.
-4. **Retro** — reflect, capture your point of view, and write future-useful context into `CLAUDE.md`.
+4. **Retro** — reflect, capture your point of view, and save future-useful facts, preferences and decisions to Claude's memory, and turn anything you will run again into a skill.
 
 ## What's inside
 
-- `CLAUDE.md` — the project instructions and workshop memory. This is the single home for workshop rules, techniques, business context, and future-session notes.
+- `CLAUDE.md` — the short workshop instructions. It holds no business context. Facts, preferences and decisions go to Claude's own memory (`/memory` shows what was kept), and procedures you will run again become skills.
 - `.agents/skills/` — the skill source copied into Claude's global skills folder during setup:
   - `/interview`
   - `/solutioning`
@@ -88,7 +88,7 @@ curl -fsSL https://github.com/papercutlabs/pcl-workshop/archive/refs/heads/maste
 
 ### 3. Install the files
 
-Skills install globally so Claude can use `/interview`, `/solutioning`, `/retro`, and `/give-feedback` from the workshop session. `CLAUDE.md` installs into the workshop folder and becomes the session memory.
+Skills install globally so Claude can use `/interview`, `/solutioning`, `/retro`, and `/give-feedback` from the workshop session. `CLAUDE.md` installs into the workshop folder and gives Claude the workshop instructions.
 
 First install the skills:
 
@@ -97,7 +97,7 @@ mkdir -p ~/.claude/skills
 cp -r /tmp/pcl-workshop-src/.agents/skills/* ~/.claude/skills/
 ```
 
-Then install the workshop memory file. If `./CLAUDE.md` already exists, do not overwrite it silently. Tell the participant you found an existing project memory file and ask whether to replace it or merge the workshop instructions into it.
+Then install the workshop instructions file. If `./CLAUDE.md` already exists, do not overwrite it silently. Tell the participant you found an existing `CLAUDE.md` and ask whether to replace it or merge the workshop instructions into it.
 
 If there is no existing `CLAUDE.md`, run:
 
@@ -105,7 +105,7 @@ If there is no existing `CLAUDE.md`, run:
 cp /tmp/pcl-workshop-src/CLAUDE.md ./CLAUDE.md
 ```
 
-If the participant chooses to merge instead of replace, preserve their existing notes and add the workshop sections from `/tmp/pcl-workshop-src/CLAUDE.md`.
+If the participant chooses to merge instead of replace, preserve their existing notes and add the workshop instructions from `/tmp/pcl-workshop-src/CLAUDE.md`.
 
 ### 4. Clean up
 
@@ -132,7 +132,7 @@ Expected:
 
 Tell them in plain English:
 
-> "Workshop folder is ready. Start a new session in the Claude desktop app and select `~/Documents/projects/workshop/pcl-workshop` so Claude picks up the workshop memory. Then tell me what you want to work on and I'll use `/interview` to walk through it."
+> "Workshop folder is ready. Start a new session in the Claude desktop app and select `~/Documents/projects/workshop/pcl-workshop` so Claude picks up the workshop instructions. Then tell me what you want to work on and I'll use `/interview` to walk through it."
 
 Then **stop**. Do not auto-fire `/interview`. The participant needs a fresh session so Claude reads the local `CLAUDE.md`.
 

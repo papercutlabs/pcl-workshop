@@ -65,19 +65,12 @@ For feedback that isn't about style — a plain factual miss, a wrong step — y
 
 ## 5. Remember it
 
-A fix that isn't written down is a fix you'll lose next session. So write it down — and **propose where it goes**, don't ask the participant to figure it out. Two plain questions pick the home.
+A fix that isn't written down is a fix you'll lose next session. So write it down, and **propose where it goes**, don't ask the participant to figure it out. There are two homes. One plain question picks between them.
 
 **Is it a way of behaving, or a job with steps?**
 
-- A preference, a fact, or a rule — "keep answers short," "our sales sheet is one row per item" → **`CLAUDE.md`**. You just know it; there's nothing to trigger.
-- A repeatable job they'll ask for again — "pull the weekly summary," "check a supplier" → **a skill**. They run it by name when they want it.
-
-**Does it apply to everything, or just this project?**
-
-- Everything they do → **global** (`~/.claude/` — every session picks it up).
-- Just this work, client, or folder → **this project's folder** (only sessions started here pick it up).
-
-That's the four homes: `CLAUDE.md` or a skill, global or project.
+- A preference, a fact, or a rule — "keep answers short," "our sales sheet is one row per item" → **memory**. Save it to Claude's memory. The participant can also just say "remember that ...", and `/memory` shows what was kept.
+- A repeatable job they'll ask for again — "pull the weekly summary," "check a supplier" → **a skill**. Make it with the skill-creator skill. They run it by name when they want it.
 
 **Write it as the right way, not as a ban.** Most mistakes happen because nobody said how it should be done. So write down what to do — "Show returns as their own line, separate from sales" — rather than only what not to do — "Never net off returns." A ban leaves the next session guessing what to do instead.
 
@@ -85,28 +78,21 @@ That's the four homes: `CLAUDE.md` or a skill, global or project.
 
 Propose the home as part of the fix, with a one-line why, and let them confirm or redirect — never "where should this go?":
 
-> "This is about how you like answers in general, so I'll put it in your global `CLAUDE.md` — every project picks it up. Good?"
+> "This is about how you like answers in general, so I'll save it to memory. Good?"
 
 **Sensible defaults**, so you're not guessing:
 
-- How they like you to work with them, in general → **global `CLAUDE.md`**. Most feedback lands here.
-- A fact about this client or project's data or process → **this project's `CLAUDE.md`**.
-- A job they'll rerun across all their work → a **global skill**. A job tied to this one project → a **project skill** (`.claude/skills/` in the project folder).
-
-Inside `CLAUDE.md`, pick the right section:
-
-- Style, tone, length, pacing → **Preferences And Working Style**
-- A fact about their work you should have known → **Business Facts To Remember**
-- A way of working they want repeated or avoided → **Reusable Workflow Notes** or **Decisions And Things Tried**
+- How they like you to work with them, a fact about their work, or a rule → **memory**. Most feedback lands here.
+- A job they'll rerun → **a skill**, made with skill-creator.
 
 Write it **general**, so it holds beyond this one moment:
 
 - Bad: "The last answer about the sales sheet was too long."
 - Good: "Lead with the answer in a sentence or two. Only add reasoning or detail when asked."
 
-Then edit the file in front of them and read back what you wrote:
+Then save it in front of them and read back what you saved:
 
-> "Written into your global `CLAUDE.md` under working style: lead with the answer, expand only when asked. Every session will pick that up before we start."
+> "Saved to memory: lead with the answer, expand only when asked. Every session will have that before we start."
 
 Then carry on with whatever you were doing.
 
@@ -115,7 +101,7 @@ Then carry on with whatever you were doing.
 - Turn the complaint into a fix, not an apology.
 - Find the cause under the symptom before you propose anything.
 - Confirm the target for style and behaviour feedback before locking it in.
-- Propose where the fix goes — `CLAUDE.md` or a skill, global or project — with a one-line why, and let them confirm.
+- Propose where the fix goes — memory or a skill — with a one-line why, and let them confirm.
 - Write the fix so it survives the session, and keep every entry general and short.
 
 ## Do Not
@@ -123,5 +109,5 @@ Then carry on with whatever you were doing.
 - Do not treat the complaint as the finished fix — the participant hands you a problem, you propose the solution.
 - Do not over-apologise or get defensive. Hear it, fix it, move.
 - Do not lock in a style change without confirming what good looks like.
-- Do not leave the fix in the conversation only — if it isn't in `CLAUDE.md` or a skill, it's gone next session.
+- Do not leave the fix in the conversation only — if it isn't in memory or a skill, it's gone next session.
 - Do not run the full end-of-cycle retro here. This is one piece of feedback, fixed on the spot. `/retro` is for the wider reflection at the end.
