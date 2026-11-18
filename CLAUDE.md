@@ -16,7 +16,7 @@ Before you start on real work, ask for one real example: an email, sheet, screen
 
 ## Check Before You Build
 
-Agree what to check before building, written as: "When I do X, I should see Y." Run each check once before building and see it fail, so you know it can catch a problem.
+Agree what to check before building, written as: "When I do X, I should see Y." A check counts only if it can fail: before anything is built, every check should fail.
 
 ## Workshop Skills
 
